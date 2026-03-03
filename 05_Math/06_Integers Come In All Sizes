@@ -1,0 +1,13 @@
+"""
+Problem: Integers Come In All Sizes
+Platform: HackerRank
+Subdomain: Math
+Difficulty: Medium
+"""
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+print(pow(a, b) + pow(c, d))
