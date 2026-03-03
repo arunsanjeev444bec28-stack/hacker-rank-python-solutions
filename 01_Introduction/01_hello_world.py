@@ -1,9 +1,11 @@
 """
-Problem: Hello World
+Problem: Say "Hello, World!" With Python
 Platform: HackerRank
 Subdomain: Introduction
 Difficulty: Easy
 """
 
-if __name__ == '__main__':
-    print("")
+print("Hello, World!")
+
+# Time Complexity: O(1)
+# Space Complexity: O(1)
