@@ -1,0 +1,9 @@
+import re
+
+n = int(input())
+b = [input() for _ in range(n)]
+b = "\n".join(b) 
+
+b = re.sub(r'(?<= )(&&|\|\|)(?= )', lambda x: "and" if x.group() == "&&" else "or", b)
+
+print(b)
