@@ -1,0 +1,9 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(set(map(int, input().split())))
+    
+    # Sort the list in ascending order
+    arr.sort()
+    
+    # The runner-up is the second to last element
+    print(arr[-2])
