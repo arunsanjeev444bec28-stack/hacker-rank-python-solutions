@@ -1,0 +1,14 @@
+li = [False, False, False, False, False]
+    for ch in s:
+        if ch.isalnum():
+            li[0] = True
+        if ch.isalpha():
+            li[1] = True
+        if ch.isdigit():
+            li[2] = True
+        if ch.islower():
+            li[3] = True
+        if ch.isupper():
+            li[4] = True
+    for o in li:
+        print(o)
