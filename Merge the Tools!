@@ -1,0 +1,9 @@
+i = len(string)//k
+
+for each in range(i):
+    output = ''
+    sub_string = string[each*k :(each+1)*k]
+    for each in sub_string:
+        if each not in output:
+            output += each
+    print(output)
