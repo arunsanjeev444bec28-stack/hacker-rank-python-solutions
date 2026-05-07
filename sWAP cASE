@@ -1,0 +1,26 @@
+def swap_case_built_in():
+    return s.swapcase()
+
+
+def swap_case_default():
+    result = []
+    for char in s:
+        if char.islower():
+            result.append(char.upper())
+        elif char.isupper():
+            result.append(char.lower())
+        else:
+            result.append(char)
+    return "".join(result)
+    
+def swap_case_list_comprehension():
+    return "".join([
+        char.upper() if char.islower()
+        else char.lower() if char.isupper() 
+        else char
+        for char in s
+    ])
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
